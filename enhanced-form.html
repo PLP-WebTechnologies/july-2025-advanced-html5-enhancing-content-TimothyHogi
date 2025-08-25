@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate VA | Enhanced HTML5 & Forms</title>
+</head>
+<body>
+  <header>
+    <h1>DreamNest Realty</h1>
+    <p>Your trusted partner in finding the perfect home.</p>
+  </header>
+
+  <!-- SECTION 1: Lists -->
+  <section>
+    <h2>Top Features Buyers Look For</h2>
+
+    <h3>Unordered List: Must-Have Features</h3>
+    <ul>
+      <li>Spacious Living Room</li>
+      <li>Modern Kitchen with Appliances</li>
+      <li>Ample Parking Space</li>
+      <li>24/7 Security</li>
+      <li>Eco-Friendly Design</li>
+    </ul>
+
+    <h3>Ordered List: Steps to Owning a Home</h3>
+    <ol>
+      <li>Browse property listings</li>
+      <li>Schedule a site visit</li>
+      <li>Discuss financing options</li>
+      <li>Make an offer</li>
+      <li>Finalize purchase agreement</li>
+    </ol>
+  </section>
+
+  <!-- SECTION 2: Table -->
+  <section>
+    <h2>Available Properties</h2>
+    <table border="1">
+      <caption>Featured Listings</caption>
+      <thead>
+        <tr>
+          <th>Property ID</th>
+          <th>Location</th>
+          <th>Type</th>
+          <th>Price (USD)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>P-101</td>
+          <td>Nairobi, Westlands</td>
+          <td>2-Bed Apartment</td>
+          <td>$85,000</td>
+        </tr>
+        <tr>
+          <td>P-102</td>
+          <td>Mombasa, Nyali</td>
+          <td>Beachfront Villa</td>
+          <td>$320,000</td>
+        </tr>
+        <tr>
+          <td>P-103</td>
+          <td>Karen, Nairobi</td>
+          <td>Luxury Bungalow</td>
+          <td>$450,000</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SECTION 3: Media -->
+  <section>
+    <h2>Property Showcase</h2>
+
+    <h3>Image</h3>
+    <img src="villa.jpg" alt="Beautiful villa with pool and garden" width="300">
+
+    <h3>Video Tour</h3>
+    <video controls width="400">
+      <source src="property-tour.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+
+    <h3>Audio Message</h3>
+    <audio controls>
+      <source src="agent-message.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- SECTION 4: Form -->
+  <section>
+    <h2>Client Inquiry Form</h2>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="johndoe@example.com" required autocomplete="email">
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254700000000" pattern="^\+?[0-9]{10,15}$" required>
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="90" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Property Preferences</legend>
+
+        <label for="location">Preferred Location:</label>
+        <select id="location" name="location" required>
+          <option value="">-- Select Location --</option>
+          <option value="nairobi">Nairobi</option>
+          <option value="mombasa">Mombasa</option>
+          <option value="kisumu">Kisumu</option>
+        </select>
+        <br><br>
+
+        <label>Property Type:</label><br>
+        <label><input type="radio" name="property_type" value="apartment" required> Apartment</label><br>
+        <label><input type="radio" name="property_type" value="villa"> Villa</label><br>
+        <label><input type="radio" name="property_type" value="bungalow"> Bungalow</label>
+        <br><br>
+
+        <label for="budget">Budget (USD):</label>
+        <input type="number" id="budget" name="budget" placeholder="50000" min="20000" max="1000000" required>
+        <br><br>
+
+        <label><input type="checkbox" name="updates"> Subscribe to property updates</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Notes</legend>
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40" placeholder="Tell us what you are looking for..."></textarea>
+      </fieldset>
+
+      <br>
+      <input type="submit" value="Submit Inquiry">
+      <input type="reset" value="Reset">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DreamNest Realty | Powered by Virtual Assistant Services</p>
+  </footer>
+</body>
+</html>
